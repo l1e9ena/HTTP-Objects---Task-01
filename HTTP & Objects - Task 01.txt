@@ -1,0 +1,46 @@
+1.	Write a blog difference between HTTP 1.1 and HTTP2 
+
+HTTP 1.1
+
+1.	HTTP 1.1 was created in 1997
+2.	It works on the textual format
+3.	It sends request one after the other, if one request is not loaded it blocks all other request. (eg. The client sends the files (jquery.js, example.css, image.jpg) through 3 different TCP connections to the server. 
+4.	 Header information like user agent, cookie and cache control is repeated with every request from the client to the server.
+5.	The client has to send a request to the server using the method (GET/POST)
+6.	It uses formats like gzip to compress the data transferred in the messages
+7.	HTTP 1.1 is slower when compared with HTTP2
+
+
+HTTP 2
+
+1.	HTTP 2 was created in 2015
+2.	It works on the binary format and arranges carefully
+3.	One TCP is required for multiple requests. (eg. The client sends the files (jquery.js, example.css, image.jpg) through one TCP connection to the server)
+4.	Header information is not repeated for every request
+5.	It uses push frame to send the files like CSS & JS without the request of the client.
+6.	It uses HPACK, to split the data from header and it compresses the header
+7.	HTTP 2 is faster when compared with HTTP1
+
+2.	Write a blog about objects and its internal representation in javascript.
+
+1.	Objects are collection of data in the form of “key: value” pairs. Keys can be variables or functions.
+2.	It is a standalone entity with properties and type (for eg. A cup is an objects, and it has a color, design, weight, and material made up of are properties).
+3.	The syntax of an object:
+      objectName.propertyName.
+    
+the object name and the property name are case sensitive.
+Eg: myCar is an object name and its properties named make, model and year.
+ 
+var myCar = newObject();
+myCar.make = ‘Ford’’
+myCAr.model = ‘Mustang’;
+myCar.year = 2020
+console.log(myCar);
+
+4.	Properties of an object can be accessed using a bracket notation.The  property name that has a space or a hyphen, or that it starts with a number can only be accessed using the square bracke notation
+5.	Creating a Javascript object with object literal, we can define the property and values inside curly braces.
+Eg: 
+
+let car = { make:  ‘Ford’,  model = ‘Mustang’, year = ‘2020’};
+6.	Booleans, Numbers, Strings, Dates, Arrays, Functions are objects.
+
